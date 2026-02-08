@@ -1,0 +1,13 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Java / compilados
+out/
+*.class
+
+# Archivos generados por la app
+*.json
+
+# Logs
+*.log
