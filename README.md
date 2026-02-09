@@ -37,11 +37,29 @@ Características principales:
 
 3. **Asegúrate de tener Java instalado** (Java 17 recomendado).
 
-4. **Compila los archivos fuente:**
+
+4. **Instala la librería Gson:**
+
+	Descarga el archivo `gson-2.8.9.jar` desde el repositorio oficial de Google:
+	[https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar](https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar)
+
+	Guarda el archivo `.jar` en la raíz de tu proyecto o en una carpeta dedicada (por ejemplo, `lib/`).
+
+5. **Compila los archivos fuente:**
 	```bash
 	javac -cp .:gson-2.8.9.jar src/*.java
+	# O si usas una carpeta lib:
+	# javac -cp .:lib/gson-2.8.9.jar src/*.java
 	```
-	> Asegúrate de tener la librería Gson en el mismo directorio o ajusta la ruta según corresponda.
+
+6. **Ejecuta el programa principal:**
+	```bash
+	java -cp .:gson-2.8.9.jar src/Principal
+	# O si usas una carpeta lib:
+	# java -cp .:lib/gson-2.8.9.jar src/Principal
+	```
+
+> Asegúrate de que la ruta al archivo `.jar` coincida con la ubicación donde lo guardaste.
 
 5. **Ejecuta el programa principal:**
 	```bash
